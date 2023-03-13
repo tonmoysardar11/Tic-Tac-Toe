@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/275a21d033.js" crossorigin="anonymous"></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>Tic Tac Toe</ul>
+        </nav>
+    </header>
+    <!-- <i class="fa-solid fa-x"></i>
+    <i class="fa-regular fa-circle"></i> -->
+    <main>
+        <div class="game-container">
+            <div class="container">
+                <div class="boxicon bl0 bt0" ></div>
+                <div class="boxicon bt0"></div>
+                <div class="boxicon bt0 br0"></div>
+                <div class="boxicon bl0"></div>
+                <div class="boxicon"></div>
+                <div class="boxicon br0"></div>
+                <div class="boxicon bl0 bb0"></div>
+                <div class="boxicon bb0 "></div>
+                <div class="boxicon bb0 br0"></div>
+            </div>
+            <div class="score">
+                <p>Let's Play Tic Tac Toe</p>
+                <span class="info" id="info">Turn for  <span id="turn"><i class="fa-solid fa-x"></i></span></span>
+                <button id="reset" onclick="document.location.reload()">Reset Game</button>
+                <div class="gif"> 
+                    <img src="https://media.tenor.com/FAIxgHJ6oX4AAAAi/white-chicken.gif" alt="Winner">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

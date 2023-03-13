@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+/* font-family: 'Rubik Iso', cursive; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 3rem;
+    animation: color 2s infinite;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik Iso', cursive;
+    font-size: 2rem;
+}
+
+@keyframes color {
+    from {
+        background-color: rgb(0, 0, 116);
+    }
+
+    to {
+        background-color: rgb(124, 0, 0);
+    }
+}
+
+nav ul {
+    list-style: none;
+    
+}
+
+.game-container{
+    display: flex;
+    justify-content: center;
+    margin: 0 2rem;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    margin: 5px;
+}
+
+.boxicon{
+    border: 2px solid rgb(0, 0, 0);
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.boxicon:hover{
+    background-color: rgb(177, 255, 215);
+}
+
+.score{
+    margin: 5rem ;
+    font-family: 'Rubik Iso', cursive;
+    animation: text 5s   infinite;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.gif img{
+    opacity: 0;
+    transition: 1s ease-in;
+    width: 10rem;
+}
+
+.br0{
+    border-right: 0;
+}
+.bl0{
+    border-left: 0;
+}
+.bt0{
+    border-top: 0;
+}
+.bb0{
+    border-bottom: 0;
+}
+#reset{
+    font-family: 'Rubik Iso', cursive;
+    padding: 0.5rem;
+    background-color: rgb(131, 85, 173);
+    font-weight: bolder;
+    border: 1px solid rgb(131, 85, 173);
+    border-radius: 1.5rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+#reset:hover{
+    padding: 0.6rem;
+    background-color: rgb(107, 61, 150);
+    font-weight: bold;
+    border: 1px solid rgb(107, 61, 150);
+    border-radius: 2rem;
+    font-size: 1.25rem;
+}
+#turn,.boxicon{
+    animation: text 5s   infinite  ;
+}
+@keyframes text {
+    from {
+        color: rgb(46, 46, 187);
+    }
+
+    to {
+        color: rgb(183, 37, 37);
+    }
+}
+#turn{
+    margin: 0 0.5rem;
+    font-size: 3.5rem;
+}
+#info{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+.score p{
+
+    font-size: 2.5rem;
+}
+
+@media screen and (max-width: 800px) {
+ .game-container{
+    flex-wrap: wrap;
+ }   
+ .score{
+    margin: 10px;
+ }
+ .container{
+    grid-template-columns: repeat(3,15vw);
+    grid-template-rows: repeat(3,15vw);
+}
+}
