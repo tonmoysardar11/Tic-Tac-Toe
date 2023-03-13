@@ -4,7 +4,7 @@ const opening_audio = new Audio('Super Contra [NES] - Game Over.mp3')
 // document.getElementById('turn').innerHTML;
 
 
-// opening_audio.play();
+opening_audio.play();
 
 
 // Turn changer x to o to x
